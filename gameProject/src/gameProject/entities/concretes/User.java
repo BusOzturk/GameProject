@@ -1,0 +1,91 @@
+package gameProject.entities.concretes;
+
+import java.time.LocalDate;
+
+import gameProject.entities.abstracts.IEntity;
+
+public class User implements IEntity {
+	private int id;
+	private String nationalityId;
+	private String firstName;
+	private String lastName;
+	private String userName;
+	private LocalDate dateOfBirth;
+	
+	public User() {
+		
+	}
+	
+	public User(int id, String nationalityId, String firstName, String lastName, String userName,
+			LocalDate dateOfBirth) {
+		super();
+		this.id = id;
+		this.nationalityId = nationalityId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.userName = userName;
+		this.dateOfBirth = dateOfBirth;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getNationalityId() {
+		return nationalityId;
+	}
+
+
+	public void setNationalityId(String nationalityId) {
+		this.nationalityId = nationalityId;
+	}
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+
+	public String getUserName() {
+		return userName;
+	}
+
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+
+	public LocalDate getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+	
+
+}
